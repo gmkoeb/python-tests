@@ -1,5 +1,10 @@
 flask
+flask_cors
 psycopg2-binary
 SQLAlchemy
 Flask-SQLAlchemy
+numpy
+matplotlib
+scipy
+scikit-learn
 Celery
