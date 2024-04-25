@@ -1,6 +1,6 @@
 services:
   api:
-    build: .
+    build: ./api
     volumes: 
       - ./api:/app
     command: flask run --host "0.0.0.0"
@@ -16,3 +16,11 @@ services:
       - POSTGRES_PASSWORD=password
     ports:
       - "5432:5432"
+  web:
+    build: ./web
+    volumes:
+      - ./web:/app
+    command: npm start
+    ports:
+      - "3000:3000"
+    
